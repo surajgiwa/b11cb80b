@@ -1,17 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { CallProvider } from './context/CallContext';
+import Home from './pages/Home';
 
-import Header from './Header.jsx';
+import ActivityDetail from './pages/ActivityDetail';
 
 const App = () => {
   return (
-    <div className='container'>
-      <Header/>
-      <div className="container-view">Some activities should be here</div>
-    </div>
+    <CallProvider>
+      <Router>  {/* Router should only be here */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          
+          <Route path="/activity/:id" element={<ActivityDetail />} />
+        </Routes>
+      </Router>
+    </CallProvider>
   );
 };
-
-ReactDOM.render(<App/>, document.getElementById('app'));
 
 export default App;

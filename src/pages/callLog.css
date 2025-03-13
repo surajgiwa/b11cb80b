@@ -1,0 +1,40 @@
+.callLog {
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.callEntry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.callDate {
+  font-size: 14px;
+  color: #666;
+  flex: 1;
+}
+
+.callDetails {
+  flex: 2;
+  margin-left: 16px;
+}
+
+.callerInfo {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.callDescription {
+  font-size: 14px;
+  color: #666;
+}
+
+.callTime {
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+}

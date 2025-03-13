@@ -1,0 +1,16 @@
+.bottomNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #fff;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 100; 
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}

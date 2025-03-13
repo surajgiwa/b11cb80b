@@ -1,0 +1,23 @@
+.topNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.tab {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.activeIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 25%; 
+  width: 50%;
+  height: 2px;
+  background-color: #007bff;
+}
